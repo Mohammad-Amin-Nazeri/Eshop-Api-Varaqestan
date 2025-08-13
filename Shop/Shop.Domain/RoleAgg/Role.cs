@@ -1,4 +1,5 @@
-﻿using Common.Domain.Exceptions;
+﻿using Common.Domain;
+using Common.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Shop.Domain.RoleAgg
 {
-    public class Role
+    public class Role :AggregateRoot
     {
         private Role()
         {
